@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grilla{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media (max-width: 1000px){
+            .grilla{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+        }
+        }
+        @media (max-width: 500px){
+            .grilla{
+            display: grid;
+            grid-template-columns: 1fr ;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="grilla">
+        <div><button><img src="img/images.jpeg"></button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas laboriosam, ex nam velit perferendis excepturi praesentium eligendi, saepe voluptatibus ipsam error, quis veritatis ipsum illo quasi sapiente labore nemo explicabo.</p></div>
+        <div><button><img src="img/images.jpeg"></button></div>
+        <div><button><img src="img/images.jpeg"></button></div>
+        <div><button><img src="img/images.jpeg"></button></div>
+        <div><button><img src="img/images.jpeg"></button></div>
+        <div><button><img src="img/images.jpeg"></button></div>
+        
+    </section>
+
+
+</body>
+</html>

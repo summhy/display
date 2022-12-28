@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .horizontal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .precio {
+        display: none;
+        background-color: rgb(136, 0, 204, 0.1);
+        text-align: center;
+        margin: auto;
+        position: relative;
+        bottom: 100px;
+        width: 50%;
+        -webkit-border-radius: 26px;
+        border-radius: 26px;
+        text-shadow: 7px 2px 2px #FFFFFF;
+
+        font-family: Impact, Charcoal, sans-serif;
+        font-size: 16px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #550754;
+        font-weight: 700;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: uppercase;
+
+    }
+
+    .flores {
+        text-align: center;
+        width: 300px;
+    }
+</style>
+
+<body>
+
+    <section class="horizontal">
+        <!--rosa-->
+        <div class="flores">
+            <img src="img/images.jpeg" alt="" onmouseover="mostrar(this)" onmouseout="ocultar(this)" id="rosa">
+            <div id="precio-rosa" class="precio">
+                <h3>$ 15.600 </h3>
+            </div>
+        </div>
+        <!--lilium-->
+        <div class="flores">
+            <img src="img/images.jpeg" alt="" onmouseover="mostrar(this)" onmouseout="ocultar(this)" id="lilium">
+            <div id="precio-lilium" class="precio"> Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Fugiat ullam
+                debitis dicta dolorum modi impedit quas maxime quos. Amet
+                distinctio temporibus esse porro magnam? Quae molestias
+                fugit architecto doloribus consequuntur? </div>
+        </div>
+
+        <!--fresia-->
+        <div class="flores">
+            <img src="img/images.jpeg" alt="" onmouseover="mostrar(this)" onmouseout="ocultar(this)" id="fresia">
+            <div id="precio-fresia" class="precio"> Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Fugiat ullam
+                debitis dicta dolorum modi impedit quas maxime quos. Amet
+                distinctio temporibus esse porro magnam? Quae molestias
+                fugit architecto doloribus consequuntur? </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        let div = document.getElementById("precio-rosa");
+        console.log(div);
+
+        console.dir(div);
+
+
+
+        function mostrar(element) {
+            let nombre = "precio-" + element.id;
+            let div = document.getElementById(nombre);
+            div.style.display = "block";
+        }
+
+        function ocultar(element) {
+            let nombre = "precio-" + element.id;
+            let div = document.getElementById(nombre);
+            div.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
